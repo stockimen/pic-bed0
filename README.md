@@ -1,19 +1,19 @@
 # 一个图床
 
-要将一个 Git 仓库的内容同步到另一个仓库（比如 `pic-bed0`），可以按照以下步骤进行操作。这些步骤假设你已经有一个本地的 Git 仓库，并且想要将其内容推送到 `pic-bed0` 仓库。
+要将一个 Git 仓库的内容同步到另一个仓库（比如 `pic-bed`），可以按照以下步骤进行操作。这些步骤假设你已经有一个本地的 Git 仓库，并且想要将其内容推送到 `pic-bed` 仓库。
 
 ### 步骤 1: 克隆目标仓库
 
-首先，确保你已经克隆了 `pic-bed0` 仓库。如果你还没有克隆，可以使用以下命令：
+首先，确保你已经克隆了 `pic-bed` 仓库。如果你还没有克隆，可以使用以下命令：
 
 ```bash
-git clone https://github.com/stockimen/pic-bed0.git
-cd pic-bed0
+git clone https://github.com/用户名/pic-bed.git
+cd pic-bed
 ```
 
 ### 步骤 2: 添加源仓库为远程仓库
 
-然后，进入你的目标目录（`pic-bed0`）并添加源仓库作为远程仓库。假设你要同步的源仓库是 `source-repo`。
+然后，进入你的目标目录（`pic-bed`）并添加源仓库作为远程仓库。假设你要同步的源仓库是 `source-repo`。
 
 ```bash
 git remote add source-repo <source-repo-url>
@@ -50,7 +50,7 @@ git commit -m "Sync with source-repo"
 
 ### 步骤 6: 推送到目标仓库
 
-最后，将更改推送到 `pic-bed0` 仓库：
+最后，将更改推送到 `pic-bed` 仓库：
 
 ```bash
 git push origin main
@@ -62,8 +62,8 @@ git push origin main
 
 ```bash
 # 克隆目标仓库
-git clone https://github.com/stockimen/pic-bed0.git
-cd pic-bed0
+git clone https://github.com/用户名/pic-bed.git
+cd pic-bed
 
 # 添加源仓库
 git remote add source-repo <source-repo-url>
